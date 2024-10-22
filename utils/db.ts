@@ -67,28 +67,9 @@ export const initialSettings = {
 
 export type Settings = typeof initialSettings
 
-export const uniModals: Model[] = [
-    {
-        id: 'gemini-1.5-flash',
-        name: 'Gemini 1.5 flash',
-        provider: 'google',
-        type: 'universal'
-    },
-    {
-        id: 'gemini-1.5-pro',
-        name: 'Gemini 1.5 Pro',
-        provider: 'google',
-        type: 'universal'
-    }
-]
+export const uniModals: Model[] = []
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
-    provider: 'openai',
-    endpoint: 'chat/completions',
-    type: 'chat'
-}, {
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
     name: 'qwen1.5-14b-chat-awq',
     provider: 'workers-ai',
